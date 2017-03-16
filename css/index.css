@@ -1,0 +1,323 @@
+/*主体盒子*/
+.box_out{
+    width:100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+}
+/*头部搜索*/
+.header_box{
+    position: fixed;
+    top:0;
+    left:0;
+    height:40px;
+    width:100%;
+    z-index: 10;
+}
+.seach_box{
+    width:100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+    height:40px;
+    background-color:rgba(202,23,32,0);
+    position:relative;
+    transition: all 1s;
+}
+.header_box>.seach_box>.icon_logo{
+    height:30px;
+    width:70px;
+    position:absolute;
+    top:10px;
+    left:5px;
+    text-align: center; /*测试用*/
+    color:red;
+}
+.header_box>.seach_box>.login{
+    height:40px;
+    line-height: 40px;
+    width:40px;
+    position:absolute;
+    top:0;
+    color:red;
+    right:5px;
+    text-align: center;
+}
+.header_box form{
+    padding:5px 45px 0 75px;
+    position:relative;
+}
+.header_box form>input{
+    width:100%;
+    height:30px;
+    border-radius: 15px;
+    padding-left: 40px;
+}
+.header_box form>span{
+    position:absolute;
+    top:10px;
+    left:85px;
+}
+/*轮播图*/
+.ad_lunbo{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+.ad_lunbo>ul{
+    width:1000%;
+    transform:translateX(-10%);
+    -webkit-transform:translateX(-10%);
+}
+.ad_lunbo>ul>li{
+    width:10%;
+    float:left;
+}
+.ad_lunbo>ul>li>a{
+    width:100%;
+    display: block;
+}
+.ad_lunbo>ul>li>a>img{
+    width:100%;
+    display: block;/*去除图片下方的间隙(基线导致的结果)：或者设置基线（vertical-align: middle;）还可以同过史设置父元素的（font-size:0;）来改变*/
+}
+.ad_lunbo>ol{
+    width:150px;
+    position:absolute;
+    bottom: 6px;
+    left:50%;
+    margin-left: -75px;
+}
+.ad_lunbo>ol>li{
+    float: left;
+    width:6px;
+    height:6px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border:1px solid #fff;
+}
+.ad_lunbo>ol>li:first-child{
+    margin-left: 16px;
+}
+.ad_lunbo>ol>li.now{
+    background: red;
+}
+/*导航条*/
+nav{
+    width:100%;
+    padding:10px 0;
+    background: #eef2e8;
+}
+nav>ul{
+    width:100%;
+}
+nav>ul>li{
+    width:25%;
+    float:left;
+}
+nav>ul>li>a{
+    display: block;
+    width:100%;
+}
+nav>ul>li>a>img{
+    width:40px;
+    height:40px;
+    display:block;
+    margin:0 auto;
+}
+nav>ul>li>a>p{
+    width:100%;
+    text-align: center;
+    padding:5px 0;
+}
+/*京东快报*/
+.jd_news{
+    width:97%;
+    padding:10px 10px;
+    margin:0 auto;
+    margin-top:10px;
+    border-radius: 5px;
+    height:40px;
+    background: #fff;
+    overflow: hidden;
+}
+.jd_news>p>span{
+    display:inline-block;
+    color:#fff;
+    background: red;
+}
+.jd_news>div{
+    height:20px;
+    overflow: hidden;
+    font-size:13px;
+}
+.jd_news>div>ul{
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+.jd_news>a {
+    /*display: block;*/
+    padding-left: 5px;
+    border-left:1px solid red;
+}
+/*秒杀区*/
+.sk{
+    width:100%;
+    background: #fff;
+}
+.sk>.sk_top{
+    height:40px;
+    width:100%;
+    padding:10px 7px;
+}
+.sk>.sk_top>p{
+    color:red;
+    margin-right:5px;
+}
+.sk>.sk_top>div>span{
+    display:inline-block;
+    border:1px solid #a0a0a0;
+}
+.sk>.sk_top>a{
+    font-size: 12px;
+}
+.sk>.sk_top>a>span{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+    background: red;
+}
+.sk>.sk_body{
+    width:100%;
+    overflow: hidden;
+}
+.sk>.sk_body>ul{
+    width:120%;
+}
+.sk>.sk_body>ul>li{
+    float:left;
+    width:25%;
+}
+.sk>.sk_body>ul>li>a>div{
+    width:100%;
+    position: relative;
+    border-right:1px solid #e8e8e8;
+    text-align: center;
+}
+.sk>.sk_body>ul>li>a>div>img{
+    width:90%;
+}
+.sk>.sk_body>ul>li>a>div>div{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    color:#fff;
+    background: red;
+}
+.sk>.sk_body>ul>li>a>p{
+    text-align: center;
+}
+.sk>.sk_body>ul>li>a>p:first-of-type{
+    color:red;
+}
+.sk>.sk_foot{
+    width:100%;
+    margin:10px 0;
+}
+.sk>.sk_foot>ul{
+    width:100%;
+}
+.sk>.sk_foot>ul>li{
+    width:25%;
+    float:left;
+}
+.sk>.sk_foot>ul>li:nth-child(2){
+    border-right:1px solid #e8e8e8;
+
+}
+.sk>.sk_foot>ul>li p{
+    padding:10px 10px;
+    font-size: 18px;
+}
+.sk>.sk_foot>ul>li p>span{
+    font-size: 25px;
+}
+/*购物分类区*/
+article{
+    width:100%;
+}
+article>section{
+    width:100%;
+}
+article>.shop>div>img{
+    display: block;
+    margin:0 auto;
+}
+article>.shop>div>div:first-child>ul{
+     width:100%;
+ }
+article>.shop>div>div:first-of-type>ul>li{
+    width:50%;
+    float:left;
+    background: #fff;
+    padding:10px;
+    border-right:1px solid #e8e8e8;
+    border-bottom:1px solid #e8e8e8;
+}
+article>.shop>div>div:first-of-type>ul>li img{
+    width:50%;
+}
+article>.shop>div>div:nth-of-type(2)>ul{
+    width:100%;
+}
+article>.shop>div>div:nth-of-type(2)>ul>li{
+    float:left;
+    width:25%;
+    background: #fff;
+    border-right:1px solid #e8e8e8;
+    border-bottom:1px solid #e8e8e8;
+    padding:5px;
+}
+article>.shop>div>div:nth-of-type(2)>ul>li img{
+    width:90%;
+}
+article>.shop .shop_lb{
+    width:100%;
+    border:10px solid #a0a0a0;
+    overflow: hidden;
+    position: relative;
+}
+article>.shop .shop_lb>ul{
+    width:400%;
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
+}
+article>.shop .shop_lb>ul>li{
+    width:25%;
+    float: left;
+    height:150px;
+}
+article>.shop .shop_lb>ul>li img{
+    width:100%;
+    height:100%;
+}
+article>.shop .shop_lb>ol{
+    width:34px;
+    height:6px;
+    position: absolute;
+    bottom: 6px;
+    left:50%;
+    margin-left: -17px;
+}
+article>.shop .shop_lb>ol>li{
+    width:6px;
+    height:6px;
+    border-radius: 3px;
+    border:1px solid #fff;
+    float: left;
+    margin:0 5px;
+}
+article>.shop .shop_lb>ol>li:first-child{
+    background: #fff;
+}
